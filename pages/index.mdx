@@ -5,24 +5,24 @@
 3. Crie sua conta no Github
 4. Crie sua conta do Vercel
 5. Deploy este documento no Vercel e instale o no github: https://vercel.com/templates/next.js/documentation-starter-kit (crie git repository se necessário)
-5.1 Clique no botão go to dashboard e clique em repository
-6. No github aperte o botão code e copie o código clone para o clipboard
-7. Vá no VScode
-7.1 abrir pasta, quando abrir uma pop-up, crie uma nova pasta e abrir
-7.2 abra o terminal (menu: ver -> Terminal | ou vai no canto direito da tela e clique no segundo icone (da esquerda pra direita) que é um quadrado com divisória abaixo dele)
-8. Digite no terminal: git clone, cole o código que você copiou e pressione enter
-8.1 Caso de um xcode error, vc pode pesquisar no chatgpt ou abrir o terminal do computador (não do vscode), copiar o codigo que ele vai dar e instalar o xcode.
-8.2 Caso de um erro que o git n está instalado vc precisa instalar ele aqui: https://git-scm.com/download/
-8.3 Se mesmo assim após clonar não aparecer no menu lateral a pasta clonada, vc clica no icone do menu lateral Explorador e clica em clonar repositório
-9. Retorne para o terminal do VScode e digite: rm -rf .git (isso vai limpar o vinculo com o codigo do outro dono – n vai dar nenhuma msg de retorno). Agora se vc estiver no windows o código vai ser ``` Remove-Item -Recurse -Force .git ```
-10. Ative salvamento automatico (File -> salvamento automatico)
-11. No menu vertical tem o nome da pasta que você está, abra a subpasta ***documentation*** que está lá dentro e abra a pasta ***pages*** -> index.mdx 
-12. Escreva algo la dentro pra testar
-13. Clique no menu lateral controle de codigo fonte (abaixo da lupa) vai aparecer um simbolo pequeno com número se não aparecer, clique nele e na opção initialize
-14. Digite uma mensagem qualquer e aperte confirmação e yes (se aparecer uma msg de erro apeee depois clique novamente no botão. (se você n colocar a msg e apertar o botão vai abrir um novo arquivo e vc pode digitar a msg nele, salvar e fechar esse aquivo COMMIT_EDITMSG e apertar novamente o botão azul)
-14.1 Caso dê erro é pq vc precisa criar o .gitignore, digite no terminal ```git config --global user.name seunomeaqui``` e de enter, e depois ```git config --global user.email seuemailaqui``` e de enter(provavelmente qnd vc apertar commit vai abrir um arquivo COMMIT_EDITMSG la na linha 1 você escreve qquer coisa, salva, fecha e aperta commit)
-14.2 Caso o erro apareça: esse git já existe basta vc digitar outro nome 
-15. Retorne no site do Vercel, vá em deployments e confira ele fazendo o build, quando terminar vc pode clicar nos 3 pontinhos, copiar URL e abrir e uma nova janela do navegador. (Se n estiver atualizando talvez vc esteja no projeto errado.)
+6. Clique no botão go to dashboard e clique em repository
+7. No github aperte o botão code e copie o código clone para o clipboard
+8. Vá no VScode
+9. abrir pasta, quando abrir uma pop-up, crie uma nova pasta e abrir
+10. abra o terminal (menu: ver -> Terminal | ou vai no canto direito da tela e clique no segundo icone (da esquerda pra direita) que é um quadrado com divisória abaixo dele)
+11. Digite no terminal: git clone, cole o código que você copiou e pressione enter
+12. Caso de um xcode error, vc pode pesquisar no chatgpt ou abrir o terminal do computador (não do vscode), copiar o codigo que ele vai dar e instalar o xcode.
+13. Caso de um erro que o git n está instalado vc precisa instalar ele aqui: https://git-scm.com/download/
+14. Se mesmo assim após clonar não aparecer no menu lateral a pasta clonada, vc clica no icone do menu lateral Explorador e clica em clonar repositório
+15. Retorne para o terminal do VScode e digite: rm -rf .git (isso vai limpar o vinculo com o codigo do outro dono – n vai dar nenhuma msg de retorno). Agora se vc estiver no windows o código vai ser ``` Remove-Item -Recurse -Force .git ```
+16. Ative salvamento automatico (File -> salvamento automatico)
+17. No menu vertical tem o nome da pasta que você está, abra a subpasta ***documentation*** que está lá dentro e abra a pasta ***pages*** -> index.mdx 
+18. Escreva algo la dentro pra testar
+19. Clique no menu lateral controle de codigo fonte (abaixo da lupa) vai aparecer um simbolo pequeno com número se não aparecer, clique nele e na opção initialize
+20. Digite uma mensagem qualquer e aperte confirmação e yes (se aparecer uma msg de erro apeee depois clique novamente no botão. (se você n colocar a msg e apertar o botão vai abrir um novo arquivo e vc pode digitar a msg nele, salvar e fechar esse aquivo COMMIT_EDITMSG e apertar novamente o botão azul)
+21. Caso dê erro é pq vc precisa criar o .gitignore, digite no terminal ```git config --global user.name seunomeaqui``` e de enter, e depois ```git config --global user.email seuemailaqui``` e de enter(provavelmente qnd vc apertar commit vai abrir um arquivo COMMIT_EDITMSG la na linha 1 você escreve qquer coisa, salva, fecha e aperta commit)
+22. Caso o erro apareça: esse git já existe basta vc digitar outro nome 
+23. Retorne no site do Vercel, vá em deployments e confira ele fazendo o build, quando terminar vc pode clicar nos 3 pontinhos, copiar URL e abrir e uma nova janela do navegador. (Se n estiver atualizando talvez vc esteja no projeto errado.)
 
 ##Dicas
 1. Terminal: se vc n conseguir digitar nada, procure a lixeira e feche o terminal e abra novamente
@@ -30,16 +30,18 @@
 
 ## Como rodar local?
 0. Talvez para o windows precise instalar o java, use o chatgpt pra achar o link certo
-1. Abra o terminal do computador (não do vscode) e digite: ``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ````
+1. Abra o terminal do computador (não do vscode) e digite: ``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ```
 2. Digite sua senha do computador (a senha não aparece)
-3. cole no terminal: ``` export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" ```
-4. cole no terminal: ``` brew install node ```
-5. cole no terminal ``` brew -v ```, ``` node -v ```, ``` npm -v ``` (isso vai conferir a versão de cada biblioteca)
-6. Reinicie o computador.
-2. Abra o VsCode e no terminal escreva ``` npm instal ````
-2. escreva ``` npm run dev ````
-3. abra o navegador e digite ```https://localhost:3000/```
-4. toda edição q vc fizer no codigo automaticamente vai atualizar na tela sem precisar dar refresh
+3 Talvez após instalar o Brew vai pedir pra colocar 2 comandos.
+4. cole no terminal: ``` export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" ```
+5. cole no terminal: ``` brew install node ```
+6. cole no terminal ``` brew -v ```, ``` node -v ```, ``` npm -v ``` (isso vai conferir a versão de cada biblioteca)
+7. Reinicie o computador.
+8. Abra o VsCode e no terminal escreva ``` npm install ```
+9. escreva ``` npm run dev ```
+10. abra o navegador e digite ```https://localhost:3000/```
+11. toda edição q vc fizer no codigo automaticamente vai atualizar na tela sem precisar dar refresh
+12. Toda vez q vc quiser usar o localhost vc vai no terminal do vscode e ``` npm run dev ```
 
 ## Documentation
 
